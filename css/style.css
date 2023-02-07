@@ -1,0 +1,43 @@
+h4 {
+	display:list-item;
+	counter-increment: tag;
+	margin-left:30px;
+}
+h4::marker {
+	color:blue;
+	content:"%" counter(tag);
+}
+div ~ p::selection {
+	color:red;
+	background-color:yellow;
+}
+.pcm p::first-letter {
+	text-decoration:underline;
+	color:red;
+	font-size:80px;
+}
+div + p::first-line {
+	background:powderblue;
+	word-spacing:80px;
+	}
+	
+.dada p::before {
+	content:"important";
+	color:green;
+	font-weight:bold;
+}
+.dada p::after {
+	content:"Dont select it";
+	color:yellow;
+	font-weight:bold;
+}
+::placeholder{
+	color:red;
+}
+input:focus {
+  background-color: yellow;
+  padding:30px;
+}
+input:valid {
+	color:lightgreen;
+}
